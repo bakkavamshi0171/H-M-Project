@@ -494,6 +494,10 @@ footer{
     width: 150px;
     padding: 10px;
   }
+   #cartbtn{
+    position: relative;
+    top:12px
+  }
 }
 @media (max-width: 500px) and (min-width: 380px) {
   .product-card {
