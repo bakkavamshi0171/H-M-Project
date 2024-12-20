@@ -40,7 +40,7 @@ function recommandationsProducts(data) {
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">$${product.price}</p>
+                            <p class="card-text">₹${product.price}</p>
                             <button class="btn btn-primary mt-auto" onclick="addToCart('${product.id}')">Add to Cart</button>
                         </div>
                     </div>
@@ -241,7 +241,7 @@ function updateFavourites(data, favourites) {
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">$${product.price}</p>
+                            <p class="card-text">₹${product.price}</p>
                             <button class="btn btn-primary mt-auto" onclick="addToCart('${product.id}')">Add to Cart</button>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ function displayProducts(data) {
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">$${product.price}</p>
+                            <p class="card-text">₹${product.price}</p>
                             <button class="btn btn-primary mt-auto" onclick="addToCart('${product.id}')">Add to Cart</button>
                         </div>
                     </div>
@@ -298,7 +298,7 @@ function filterProducts(data, category) {
                 </div>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text">$${product.price}</p>
+                    <p class="card-text">₹${product.price}</p>
                     <button class="btn btn-primary mt-auto" onclick="addToCart('${product.id}')">Add to Cart</button>
                 </div>
             </div>
@@ -334,7 +334,7 @@ function productDetails(productItemId){
         <div class="col-md-6 d-flex flex-column justify-content-center">
             <h1 class="display-5 font-weight-bold">${product.name}</h1>
             <p class="h4 text-muted mb-4">${product.details}</p>
-             <p class="h4 text-muted mb-4">Rs ${product.price}</p>
+             <p class="h4 text-muted mb-4">Rs ₹${product.price}</p>
             <!-- Color Options -->
             <div class="mb-3">
                 <h5>Color:</h5>
@@ -450,7 +450,7 @@ function displayCart(data, cartbag) {
                       <img src="${product.image}" alt="${product.name}">
                       <div class="cart-item-details">
                           <h5 class="cart-item-name">${product.name}</h5>
-                          <p class="cart-item-price">$${
+                          <p class="cart-item-price">₹${
                             product.price
                           } (15% OFF)</p>
                           <p class="cart-item-delivery">Delivery by <span>${Math.floor(
