@@ -432,13 +432,9 @@ function removeFromCart(data, itemId) {
 }
 
 function displayCart(data, cartbag) {
-  // console.log("Data type:", typeof data, "Is Array:", Array.isArray(data)); // Debugging log
   let favouritesBag = document.getElementById("favouritesBag");
   let productCards = "";
-  // if (!Array.isArray(cartbag)) {
-  //     console.error("cartbag is not an array");
-  //     return; // Early return to prevent errors
-  // }
+ 
   if (cartbag.length === 0) {
     favouritesBag.innerHTML = `<p style="text-align:center;font-size:xx-large; color:red;">No Favourite items added Yet!</p>`;
   } else {
